@@ -1,0 +1,26 @@
+﻿<Page
+    x:Class="culinarmobile.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:culinarmobile"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" Width="1364.5">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    	<AppBarButton x:Name="backButton" Icon="Back" Height="104" Margin="151,84,0,0"
+    		Command="{Binding NavigationHelper.GoBackCommand, ElementName=pageRoot}" 
+    		AutomationProperties.Name="Back"
+    		AutomationProperties.AutomationId="BackButton"
+    		AutomationProperties.ItemType="Navigation Button" Width="109" RenderTransformOrigin="0.5,0.5">
+    		<AppBarButton.RenderTransform>
+    			<CompositeTransform ScaleX="3" ScaleY="3"/>
+    		</AppBarButton.RenderTransform>
+    	</AppBarButton>
+    	<TextBlock HorizontalAlignment="Left" Height="107" Margin="424,29,0,0" TextWrapping="Wrap" Text="CulinarQuizz" VerticalAlignment="Top" Width="798" FontSize="73.333" FontFamily="Segoe Script"/>
+    	<Button x:Name="Show_Quizz" Content="Quizz" HorizontalAlignment="Left" Height="295" Margin="4,175,0,0" VerticalAlignment="Top" Width="680" FontSize="32"/>
+    	<Button x:Name="Show_Recipes" Content="Recipes" HorizontalAlignment="Left" Height="295" Margin="678,175,0,0" VerticalAlignment="Top" Width="680" RenderTransformOrigin="0.486,0.491" FontSize="32"/>
+    	<Button x:Name="Contribute" Content="Contribute" HorizontalAlignment="Left" Height="295" Margin="4,464,0,0" VerticalAlignment="Top" Width="680" FontSize="32"/>
+    	<Button x:Name="Account" Content="My account" HorizontalAlignment="Left" Height="295" Margin="678,464,0,0" VerticalAlignment="Top" Width="680" FontSize="32"/>
+    </Grid>
+</Page>
